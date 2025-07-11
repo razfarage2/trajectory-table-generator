@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"G:/trajectory-table-generator/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

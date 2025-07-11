@@ -1,10 +1,16 @@
-#include <iostream> // Include the iostream library for input/output operations
+#include <iostream>
+#include "calc_functions.h"
 
 int main() {
-    // This is the entry point of your C++ program.
-    // Code execution begins here.
+    try {
+        runSimulation();
+    } catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << '\n';
+        return 1;
+    } catch (...) {
+        std::cerr << "Unknown error occurred.\n";
+        return 1;
+    }
 
-    std::cout << "Hello, C++ Project!" << std::endl; // Print a message to the console
-
-    return 0; // Indicate that the program executed successfully
+    return 0;
 }
